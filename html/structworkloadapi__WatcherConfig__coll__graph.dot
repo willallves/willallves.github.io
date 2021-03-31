@@ -1,0 +1,8 @@
+digraph "workloadapi_WatcherConfig"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="workloadapi_WatcherConfig",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" client" ,fontname="Helvetica"];
+  Node2 [label="workloadapi_Client",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__Client.html"];
+}

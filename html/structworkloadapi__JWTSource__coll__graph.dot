@@ -1,0 +1,28 @@
+digraph "workloadapi_JWTSource"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="workloadapi_JWTSource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" config" ,fontname="Helvetica"];
+  Node2 [label="workloadapi_JWTSourceConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__JWTSourceConfig.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" watcher_config" ,fontname="Helvetica"];
+  Node3 [label="workloadapi_JWTWatcherConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__JWTWatcherConfig.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" client" ,fontname="Helvetica"];
+  Node4 [label="workloadapi_Client",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__Client.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" watcher" ,fontname="Helvetica"];
+  Node5 [label="workloadapi_JWTWatcher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__JWTWatcher.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" jwt_callback" ,fontname="Helvetica"];
+  Node6 [label="workloadapi_JWTCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structworkloadapi__JWTCallback.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" func" ,fontname="Helvetica"];
+  Node7 [label="jwtbundle_Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjwtbundle__Set.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bundles" ,fontname="Helvetica"];
+  Node8 [label="map_string_jwtbundle\l_Bundle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmap__string__jwtbundle__Bundle.html"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node9 [label="jwtbundle_Bundle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjwtbundle__Bundle.html"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" td" ,fontname="Helvetica"];
+  Node10 [label="spiffeid_TrustDomain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspiffeid__TrustDomain.html"];
+  Node11 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" auths" ,fontname="Helvetica"];
+  Node11 [label="map_string_EVP_PKEY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmap__string__EVP__PKEY.html"];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" client" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bundles" ,fontname="Helvetica"];
+}
